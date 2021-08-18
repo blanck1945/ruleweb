@@ -45,6 +45,8 @@ const Ganador: React.FC<PageProps> = () => {
       )}&${addDash(user.prize.premio)}`,
     };
 
+    console.warn(templateParams);
+
     if (user.email.sendEmail) {
       emailjs
         .send(
